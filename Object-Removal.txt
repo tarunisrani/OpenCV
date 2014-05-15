@@ -1,0 +1,8 @@
+This program is the basic version of object removal concept, and implements simple algorithm for simple objects. 
+Also one limitation is that it works for only one object removal. In realtime images quality of image differs 
+in every frame hence  this program will not give good quality in realtime cases.
+The next version of this program will be focused on realtime problems.
+This code is compiled in opencv-2.4.6.1
+The command to run the program is :
+$ ./Object-Removal Landscape_2.jpg Landscape_1.jpg
+The output of this code is result.jpg
