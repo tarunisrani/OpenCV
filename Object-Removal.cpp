@@ -102,8 +102,8 @@ int main( int argc, char** argv ){
 		drawRectangles(contours[i], rectangles);
 	}
 	drawContours(image3,contours,-1,cv::Scalar(255,255,255),-1);
-	rectangle( image3, cvPoint(rectangles[0].x, rectangles[0].y),cvPoint(rectangles[0].x+rectangles[0].width, rectangles[0].y+rectangles[0].height), CV_RGB(255,255,255), 3, 8, 0);
-rectangle( image3, cvPoint(rectangles[1].x, rectangles[1].y),cvPoint(rectangles[1].x+rectangles[1].width, rectangles[1].y+rectangles[1].height), CV_RGB(255,255,255), 3, 8, 0);
+	//rectangle( image3, cvPoint(rectangles[0].x, rectangles[0].y),cvPoint(rectangles[0].x+rectangles[0].width, rectangles[0].y+rectangles[0].height), CV_RGB(255,255,255), 3, 8, 0);
+//rectangle( image3, cvPoint(rectangles[1].x, rectangles[1].y),cvPoint(rectangles[1].x+rectangles[1].width, rectangles[1].y+rectangles[1].height), CV_RGB(255,255,255), 3, 8, 0);
 
 
 	Mat img1a,img1b,img2a,img2b;
@@ -124,12 +124,12 @@ rectangle( image3, cvPoint(rectangles[1].x, rectangles[1].y),cvPoint(rectangles[
 	}
 
 	imwrite("result.jpg", image_C);
-	imwrite("img1a.jpg", img1a);
+	/*imwrite("img1a.jpg", img1a);
 	imwrite("img1b.jpg", img1b);
 	imwrite("img2a.jpg", img2a);
 	imwrite("img2b.jpg", img2b);
 	imwrite("result-a.jpg", image1);
 	imwrite("result-b.jpg", image2);
-	imwrite("result-c.jpg", image3);
+	imwrite("result-c.jpg", image3);*/
 	return 0;
 }
